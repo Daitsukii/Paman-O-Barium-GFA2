@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcuLater</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CalcuLater</h1>
+    <p>When tamad ka magcalculate on your own so you make your own calculator in a time span of a hundred times longer than calculating on your own.</p>
+    <div id="input">
+        <input type="text" id="num1" placeholder="#1">
+        <input type="text" id="num2" placeholder="#2">
+    </div>
+    <div id="oper">
+        <button onclick="add(document.getElementById('num1').value, document.getElementById('num2').value)">+</button>
+        <button onclick="sub(document.getElementById('num1').value, document.getElementById('num2').value)">-</button>
+        <button onclick="tim(document.getElementById('num1').value, document.getElementById('num2').value)">×</button>
+        <button onclick="div(document.getElementById('num1').value, document.getElementById('num2').value)">÷</button>
+        <button onclick="mod(document.getElementById('num1').value, document.getElementById('num2').value)">%</button>
+    </div>
+    <p id="result">Results will be displayed here.</p>
+    <script src="script.js"></script>
+</body>
+</html>
